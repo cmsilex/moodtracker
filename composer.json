@@ -1,0 +1,12 @@
+{
+    "name": "cmsilex/moodtracker",
+    "description": "Track your mood.",
+    "authors": [
+        {
+            "name": "Leigh Murray",
+            "email": "leighmurray@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
