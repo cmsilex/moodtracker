@@ -25,6 +25,7 @@ class MoodTracker implements ServiceProviderInterface, BootableProviderInterface
     public function boot(Application $app)
     {
         $thoughtEntity = new CMSEntity(Thought::class, ThoughtType::class);
+        $thoughtEntity->setDefaultPageLimit(100);
         $thoughtEntity->addColumn('Situation/Trigger', 'situation');
         $thoughtEntity->addColumn('Mood', 'mood');
         $thoughtEntity->addColumn('Time of day', function (Thought $thought) {
